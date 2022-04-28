@@ -1,0 +1,33 @@
+.form-container {
+    position: relative;
+}
+
+.form-input {
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.267);
+}
+
+.form-input:focus {
+    background: rgba(255, 255, 255, 0.267);
+    outline: none;
+    border: none;
+}
+
+.form-input::placeholder {
+    color: #fff;
+}
+
+.form-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 100px;
+    height: 40px;
+    background: #0d556a;
+    border: none;
+}
+
+.form-btn:focus {
+    background: #0d556a;
+}
