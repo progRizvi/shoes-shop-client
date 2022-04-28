@@ -16,7 +16,7 @@ const Products = () => {
 	};
 	useEffect(() => {
 		axios
-			.get("https://squadrone.herokuapp.com/products")
+			.get("https://shoesshop-server.herokuapp.com/products")
 			.then((result) => setProducts(result.data));
 	}, []);
 	return (
@@ -37,7 +37,8 @@ const Products = () => {
 					Get Your Shoes
 				</Typography>
 				<Typography variant="body1" sx={{ width: "50%", mt: 5 }}>
-				Women Shoe - Buy Ladies shoes online at best prices. Find lady shoes for casual & sportswear from top brands
+					Women Shoe - Buy Ladies shoes online at best prices. Find lady shoes
+					for casual & sportswear from top brands
 				</Typography>
 			</Box>
 			<Container>

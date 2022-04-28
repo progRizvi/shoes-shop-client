@@ -17,9 +17,11 @@ const ManageProducts = () => {
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {
-		axios.get("https://squadrone.herokuapp.com/products").then((result) => {
-			setProducts(result.data);
-		});
+		axios
+			.get("https://shoesshop-server.herokuapp.com/products")
+			.then((result) => {
+				setProducts(result.data);
+			});
 	}, []);
 
 	const handleDelete = (key) => {
@@ -28,7 +30,7 @@ const ManageProducts = () => {
 		);
 		if (confirmDelete) {
 			axios
-				.delete(`https://squadrone.herokuapp.com/products/${key}`)
+				.delete(`https://shoesshop-server.herokuapp.com/products/${key}`)
 				.then((result) => {
 					const remaining = products.filter((product) => product._id !== key);
 					setProducts(remaining);

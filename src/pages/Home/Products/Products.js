@@ -9,7 +9,7 @@ const Products = () => {
 
 	useEffect(() => {
 		axios
-			.get("https://squadrone.herokuapp.com/products")
+			.get("https://shoesshop-server.herokuapp.com/products")
 			.then((result) => setProducts(result.data));
 	}, []);
 	return (

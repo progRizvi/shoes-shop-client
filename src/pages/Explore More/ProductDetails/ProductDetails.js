@@ -15,7 +15,7 @@ const ProductDetails = () => {
 
 	useEffect(() => {
 		axios
-			.get(`https://squadrone.herokuapp.com/products/${productId}`)
+			.get(`https://shoesshop-server.herokuapp.com/products/${productId}`)
 			.then((result) => {
 				setProduct(result.data);
 			});
@@ -28,7 +28,7 @@ const ProductDetails = () => {
 		newData.orderImg = product.image;
 		newData.status = "Pending";
 		axios
-			.post("https://squadrone.herokuapp.com/orders", newData)
+			.post("https://shoesshop-server.herokuapp.com/orders", newData)
 			.then((result) => {
 				if (result.data.insertedId) {
 					alert("Order Proccessing...");
