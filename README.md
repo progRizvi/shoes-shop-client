@@ -1,9 +1,9 @@
 # Project Name is Squadrone
 
-Squadrone [Squadrone Client](https://squadrone-client.web.app/).
-Squadrone [Squadrone Server](https://squadrone.herokuapp.com/).
+Shoes Shop [Squadrone Client](https://squadrone-client.web.app/).
+Shoes Shop [Squadrone Server](https://squadrone.herokuapp.com/).
 
-## This Project All about Drone selling website.
+## This Project All about Shoes selling website.
 
 ## In This Project there some Features
 * Email Login System
